@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FullBright Wiki</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    background: #fff;
+    color: #222;
+    display: flex;
+    min-height: 100vh;
+  }
+
+  /* SIDEBAR */
+  aside {
+    width: 220px;
+    flex-shrink: 0;
+    border-right: 1px solid #e0e0e0;
+    padding: 32px 16px;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    overflow-y: auto;
+  }
+
+  .sidebar-logo {
+    font-size: 15px;
+    font-weight: 600;
+    color: #111;
+    margin-bottom: 28px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #e0e0e0;
+  }
+
+  .sidebar-section {
+    font-size: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #999;
+    margin-bottom: 8px;
+    margin-top: 20px;
+  }
+
+  aside a {
+    display: block;
+    font-size: 13px;
+    color: #444;
+    text-decoration: none;
+    padding: 5px 8px;
+    border-radius: 4px;
+    margin-bottom: 2px;
+  }
+
+  aside a:hover, aside a.active {
+    background: #f3f3f3;
+    color: #111;
+  }
+
+  /* MAIN */
+  main {
+    flex: 1;
+    max-width: 720px;
+    padding: 48px 56px;
+  }
+
+  h1 {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+
+  .page-desc {
+    font-size: 15px;
+    color: #666;
+    margin-bottom: 36px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #e0e0e0;
+  }
+
+  h2 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 40px;
+    margin-bottom: 16px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #e0e0e0;
+  }
+
+  p {
+    font-size: 14px;
+    color: #333;
+    line-height: 1.8;
+    margin-bottom: 12px;
+  }
+
+  .callout {
+    background: #f8f8f8;
+    border-left: 3px solid #bbb;
+    border-radius: 0 6px 6px 0;
+    padding: 14px 18px;
+    font-size: 14px;
+    color: #444;
+    margin: 20px 0;
+    line-height: 1.7;
+  }
+
+  kbd {
+    display: inline-block;
+    background: #f0f0f0;
+    border: 1px solid #ccc;
+    border-bottom: 2px solid #bbb;
+    border-radius: 4px;
+    padding: 2px 8px;
+    font-family: monospace;
+    font-size: 13px;
+    color: #222;
+  }
+
+  ul {
+    list-style: none;
+    margin: 0 0 12px;
+    padding: 0;
+  }
+
+  ul li {
+    font-size: 14px;
+    color: #333;
+    line-height: 1.8;
+    padding: 4px 0;
+    padding-left: 16px;
+    position: relative;
+  }
+
+  ul li::before {
+    content: '—';
+    position: absolute;
+    left: 0;
+    color: #999;
+  }
+
+  ul li strong {
+    color: #111;
+  }
+
+  footer {
+    margin-top: 64px;
+    padding-top: 24px;
+    border-top: 1px solid #e0e0e0;
+    font-size: 12px;
+    color: #aaa;
+  }
+</style>
+</head>
+<body>
+
+<aside>
+  <div class="sidebar-logo">📖 FullBright Wiki</div>
+
+  <div class="sidebar-section">Getting Started</div>
+  <a href="#how" class="active">How it works</a>
+
+  <div class="sidebar-section">Reference</div>
+  <a href="#features">Features</a>
+</aside>
+
+<main>
+  <h1>FullBright</h1>
+  <p class="page-desc">A lightweight Fabric mod that lets you see in complete darkness with a single keypress.</p>
+
+  <h2 id="how">How it works</h2>
+  <p>Press <kbd>B</kbd> to toggle FullBright on or off. That's all there is to it — no configuration, no restart, no setup.</p>
+  <div class="callout">
+    The default toggle key is <kbd>B</kbd>. You can change it any time from the Controls menu in Minecraft settings.
+  </div>
+
+  <h2 id="features">Features</h2>
+  <ul>
+    <li><strong>True brightness</strong> — see in complete darkness without any light source</li>
+    <li><strong>Completely silent</strong> — no particles or HUD icon</li>
+    <li><strong>Lightweight</strong> — zero performance impact</li>
+    <li><strong>Client-side only</strong> — works on any server, no install required server-side</li>
+    <li><strong>Simple toggle</strong> — press <kbd>B</kbd> anytime to enable or disable</li>
+    <li><strong>Changeable key</strong> — rebind the toggle key to your preference</li>
+    <li><strong>Language support</strong> — available in English, Turkish, German, French, Spanish, Portuguese, Italian, Russian, and Hindi</li>
+  </ul>
+
+  <footer>FullBright · erdemstandi</footer>
+</main>
+
+</body>
+</html>
